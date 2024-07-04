@@ -9,7 +9,6 @@ import random
 import cv2
 from tensorflow.keras.layers import Dense
 from tensorflow.keras.layers import Dropout, GlobalAveragePooling2D
-from tensorflow.keras.regularizers import l2
 from tensorflow.python.keras.callbacks import EarlyStopping
 from tensorflow.keras import models
 import tensorflow as tf
@@ -114,7 +113,6 @@ model = models.Sequential([
     Dense(128, activation='relu'),
     Dense(num_classi, activation='softmax')
 ])
-print(model.summary())
 
 model.compile(optimizer=Adam(learning_rate=1e-3), loss='categorical_crossentropy', metrics=['accuracy'])
 # lr scheduler per adattare il learning rate in base alle epoche

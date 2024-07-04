@@ -8,7 +8,7 @@ import random
 import cv2
 
 test_dir = './Data/ASL_dataset3/Test_Alphabet'
-model_dir = 'Data/models/ResNet50.keras'
+model_dir = 'Data/models/PROJECT104.keras'
 
 classi = [folder[len(test_dir) + 1:] for folder in glob.glob(test_dir + '/*')]
 classi.sort()

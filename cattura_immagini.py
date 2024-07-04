@@ -7,7 +7,7 @@ from PIL import Image
 
 
 # directories dei modelli
-model_dir = './Data/models/ResNet50.keras'
+model_dir = './Data/models/PROJECT104.keras'
 model = tf.keras.models.load_model(model_dir)
 
 # parametri in ingresso
